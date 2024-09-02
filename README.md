@@ -1,0 +1,47 @@
+
+## Linux Configuration Files
+A remote copy of my Linux configuration files. Each file is symlink'd into place
+using GNU Stow. Each top-level directory represents configuration for a 
+single application. In order to load the configuration for that application you 
+invoke `stow` passing the name of the top-level directory. This allows you to 
+select _which_ configurations you would like to use. For example, to load my 
+bashrc into the $HOME directory, I would run the following. 
+
+```
+$> cd stow
+$> stow --dotfiles bash
+```
+
+### Configurations
+The following briefly describe what configurations are included in the repository.
+
+#### bash
+Default bashrc provided by Fedora Linux.
+
+#### foot
+Foot is a terminal emulator that comes with sway. I have adjusted the 
+configuration slightly e.g., increase default font size (8 >> 12).
+
+#### nvim
+Use all defaults i.e., a blank init.lua.
+
+#### sway
+Sway is a window manager which aims to replicate the i3 experience on Wayland.
+Most of my configuration remains default, but I have added a few things. Most
+importantly, I use [waybar](#waybar). Other than that, I think it's basically
+just modifications to things like `gaps inner 5`.
+
+#### waybar
+Waybar is a third-party extension to sway. It is a command-line instruction
+that is invoked by the sway manager during `bar` draws. In my sway config,
+this happens at `bar swaybar_command waybar` or something. I prefer a
+drastically simplified status bar, so my waybar configuration reflects that. It
+just contains network, battery, and time modules. 
+
+#### xdg
+I like using lowercase directory names. This clashes with the default 
+xdg-user-dir directory names. This configuration changes all of
+the default directories to use lowercase. It also disables the execution
+of xdg-user-dir-update at login. This prevents my user configuration from
+being overwritten by /etc/xdg/user-dirs.dirs at each new login session.
+
