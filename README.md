@@ -31,6 +31,11 @@ Most of my configuration remains default, but I have added a few things. Most
 importantly, I use [waybar](#waybar). Other than that, I think it's basically
 just modifications to things like `gaps inner 5`.
 
+- Use waybar
+- Mouse pointer speed
+- Make capslock be escape
+- Add gaps
+
 #### waybar
 Waybar is a third-party extension to sway. It is a command-line instruction
 that is invoked by the sway manager during `bar` draws. In my sway config,

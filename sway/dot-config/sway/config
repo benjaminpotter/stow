@@ -68,6 +68,14 @@ input "type:pointer" {
 
 }
 
+# Change input behaviour of keyboard.
+input "type:keyboard" {
+
+	# Make capslock work as escape.
+	xkb_options caps:escape
+
+}
+
 ### Key bindings
 #
 # Basics:
