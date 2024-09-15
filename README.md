@@ -23,7 +23,11 @@ Foot is a terminal emulator that comes with sway. I have adjusted the
 configuration slightly e.g., increase default font size (8 >> 12).
 
 #### nvim
-Use all defaults i.e., a blank init.lua.
+I have added a few configurations to my init.lua.
+
+- Set tab behaviour
+- Use `vim-plug` as plugin manager
+- Install gitgutter
 
 #### sway
 Sway is a window manager which aims to replicate the i3 experience on Wayland.
