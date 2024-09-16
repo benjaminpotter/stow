@@ -11,6 +11,11 @@ local Plug = vim.fn['plug#']
 vim.call('plug#begin')
 
 Plug('airblade/vim-gitgutter')
+Plug('rust-lang/rust.vim')
 
 vim.call('plug#end')
+
+-- rust.vim
+-- Set :RustFmt to run when the current buffer is saved.
+vim.g.rustfmt_autosave = true
 
