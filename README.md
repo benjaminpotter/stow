@@ -47,8 +47,12 @@ just modifications to things like `gaps inner 5`.
 Waybar is a third-party extension to sway. It is a command-line instruction
 that is invoked by the sway manager during `bar` draws. In my sway config,
 this happens at `bar swaybar_command waybar` or something. I prefer a
-drastically simplified status bar, so my waybar configuration reflects that. It
-just contains network, battery, and time modules. 
+drastically simplified status bar, so my waybar configuration reflects that.
+
+ - Add battery
+ - Add network
+ - Add date and time
+ - Add volume
 
 #### xdg
 I like using lowercase directory names. This clashes with the default 

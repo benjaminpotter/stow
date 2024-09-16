@@ -13,6 +13,7 @@
     ],
     "modules-right": [
         "network",
+	"pulseaudio",
         "battery",
         "clock"
     ],
@@ -33,7 +34,14 @@
     // Documentation
     // https://github.com/Alexays/Waybar/wiki/Module:-Battery
     "battery": {
-        "format": "{capacity}%",
+        "format": "b {capacity}%",
+	"tooltip": false
+    },
+
+    // Documentation
+    // https://github.com/Alexays/Waybar/wiki/Module:-PulseAudio
+    "pulseaudio": {
+	"format": "v {volume}%",
 	"tooltip": false
     },
 

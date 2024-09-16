@@ -35,6 +35,7 @@ button {
 
 #clock,
 #battery,
+#pulseaudio,
 #network,
 #mode {
     background-color: #64727D;
