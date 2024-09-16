@@ -26,8 +26,9 @@
     // Documentation
     // https://github.com/Alexays/Waybar/wiki/Module:-Clock
     "clock": {
-        // "timezone": "America/New_York",
-	"format":"{:%D %H:%M}",
+	"interval": 1,
+	"format":"{:%D %T}",
+        "timezone": "America/New_York",
 	"tooltip": false
     },
 
