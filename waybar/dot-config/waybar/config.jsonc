@@ -35,7 +35,9 @@
     // Documentation
     // https://github.com/Alexays/Waybar/wiki/Module:-Battery
     "battery": {
-        "format": "B {capacity}%",
+        "format": "B -{capacity}%",
+        "format-discharging": "B v{capacity}%",
+        "format-charging": "B ^{capacity}%",
 	"tooltip": false
     },
 

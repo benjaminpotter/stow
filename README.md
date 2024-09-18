@@ -49,7 +49,7 @@ that is invoked by the sway manager during `bar` draws. In my sway config,
 this happens at `bar swaybar_command waybar` or something. I prefer a
 drastically simplified status bar, so my waybar configuration reflects that.
 
- - Add battery
+ - Add battery, with current status indicator (^, v, -)
  - Add network
  - Add date and time
  - Add volume
