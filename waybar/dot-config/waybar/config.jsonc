@@ -12,6 +12,7 @@
         "sway/mode"
     ],
     "modules-right": [
+	"cpu",
         "network",
 	"pulseaudio",
         "battery",
@@ -21,6 +22,11 @@
     // Module configurations.
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
+    },
+
+    "cpu": {
+	"interval": 1,
+	"format": "C {usage}%"
     },
 
     // Documentation

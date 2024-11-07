@@ -37,6 +37,7 @@ button {
 #battery,
 #pulseaudio,
 #network,
+#cpu,
 #mode {
     background-color: #64727D;
     padding: 0 10px;

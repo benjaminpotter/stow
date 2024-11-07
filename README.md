@@ -53,6 +53,7 @@ drastically simplified status bar, so my waybar configuration reflects that.
  - Add network
  - Add date and time
  - Add volume
+ - Add CPU usage
 
 #### xdg
 I like using lowercase directory names. This clashes with the default 
