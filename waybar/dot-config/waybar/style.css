@@ -38,10 +38,20 @@ button {
 #pulseaudio,
 #network,
 #cpu,
+#memory,
+#disk,
 #mode {
     background-color: #64727D;
     padding: 0 10px;
     color: #ffffff;
+}
+
+#battery.charging {
+    background-color: #4eeb4b;
+}
+
+#battery.critical {
+    background-color: #eb4d4b;
 }
 
 #window,
