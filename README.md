@@ -43,6 +43,10 @@ just modifications to things like `gaps inner 5`.
 - Make capslock be escape
 - Add gaps
 
+> [!NOTE]
+> Sway uses the `dmenu` package for easy access to GUI applications.
+> Install via `sudo dnf install dmenu` on Fedora.
+
 #### waybar
 Waybar is a third-party extension to sway. It is a command-line instruction
 that is invoked by the sway manager during `bar` draws. In my sway config,
