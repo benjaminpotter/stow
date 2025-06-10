@@ -32,6 +32,12 @@ I have added a few configurations to my init.lua.
 - Install gitgutter
 - Install rust.vim plugin
 
+#### vim
+I like using vim over nvim at the moment. The configuration files are simpler than writing Lua.
+
+- Add vim-plug as plugin manager
+- Add rust-lang/rust.vim to format rust code on save.
+
 #### sway
 Sway is a window manager which aims to replicate the i3 experience on Wayland.
 Most of my configuration remains default, but I have added a few things. Most

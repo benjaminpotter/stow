@@ -1,0 +1,13 @@
+
+call plug#begin()
+
+" List your plugins here
+Plug 'rust-lang/rust.vim'
+
+call plug#end()
+
+syntax enable
+filetype plugin indent on
+
+let g:rustfmt_autosave = 1
+
