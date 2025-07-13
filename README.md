@@ -20,9 +20,18 @@ Default bashrc provided by Fedora Linux.
 
 - Add `cargo` to PATH
 
+#### fish
+Pretty nice shell.
+
+- Set abbreviations
+- Set vi keybindings mode
+- Remove greeting
+
 #### foot
 Foot is a terminal emulator that comes with sway. I have adjusted the 
 configuration slightly e.g., increase default font size (8 >> 12).
+
+- Make fish default shell
 
 #### nvim
 I have added a few configurations to my init.lua.
@@ -48,6 +57,8 @@ just modifications to things like `gaps inner 5`.
 - Mouse pointer speed
 - Make capslock be escape
 - Add gaps
+- Add mod+< and mod+> for moving workspaces
+- Add clamshell script for disabling laptop screen with extern monitors
 
 > [!NOTE]
 > Sway uses the `dmenu` package for easy access to GUI applications.
