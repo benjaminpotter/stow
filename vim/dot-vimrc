@@ -3,11 +3,19 @@ call plug#begin()
 
 " List your plugins here
 Plug 'rust-lang/rust.vim'
+Plug 'lervag/vimtex'
 
 call plug#end()
 
 syntax enable
 filetype plugin indent on
 
+set expandtab
+set shiftwidth=4
+
 let g:rustfmt_autosave = 1
+
+" In .tex files make a tab character expand to 2 spaces.
+autocmd FileType tex setlocal expandtab shiftwidth=2
+let g:vimtex_index_enabled = 1
 
