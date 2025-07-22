@@ -9,13 +9,23 @@ call plug#end()
 
 syntax enable
 filetype plugin indent on
-
+set number relativenumber
+" Show highlighted column for long lines.
+set colorcolumn=80
+" Make highlighted column match rust guidelines.
+autocmd FileType rs setlocal colorcolumn=100
+" Keep more context on screen while scrolling.
+set scrolloff=2
+set ignorecase smartcase
+set wildignore=.hg,.svn,*~,*.png,*.jpg,*.gif,*.min.js,*.swp,*.o,vendor,dist,_site
+set wildmode=list:longest
 set expandtab
 set shiftwidth=4
-
-let g:rustfmt_autosave = 1
-
+" Underline matches rather than make big highlight.
+highlight Search cterm=underline gui=underline ctermbg=NONE guibg=NONE
+" Run rust formatter on every save.
+let g:rustfmt_autosave=1
 " In .tex files make a tab character expand to 2 spaces.
 autocmd FileType tex setlocal expandtab shiftwidth=2
-let g:vimtex_index_enabled = 1
+let g:vimtex_index_enabled=1
 
