@@ -1,3 +1,5 @@
+fish_add_path ~/.local/bin
+set -x EDITOR /usr/bin/nvim
 
 if status is-interactive
 	set -g fish_greeting ""
