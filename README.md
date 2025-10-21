@@ -40,6 +40,8 @@ I have added a few configurations to my init.lua.
 - Use `vim-plug` as plugin manager
 - Install gitgutter
 - Install rust.vim plugin
+- Install tex-fmt for formatting tex files
+    - Use with conform.nvim for \<leader\>f 
 
 #### vim
 I like using vim over nvim at the moment. The configuration files are simpler than writing Lua.
