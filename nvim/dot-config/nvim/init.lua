@@ -284,6 +284,15 @@ require('lazy').setup({
     },
   },
 
+  {
+    'chomosuke/typst-preview.nvim',
+    lazy = false, -- or ft = 'typst'
+    version = '1.*',
+    opts = {
+      debug = true,
+    }, -- lazy.nvim will implicitly calls `setup {}`
+  },
+
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
@@ -676,13 +685,12 @@ require('lazy').setup({
         -- pyright = {},
         rust_analyzer = {
           settings = {
-            ['rust-analyzer'] = {
-              checkOnSave = {
-                extraArgs = { '--target-dir', '/tmp/rust_analyzer_check' },
-              },
-            },
+            ['rust-analyzer'] = {},
           },
         },
+
+        tinymist = {},
+
         -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
@@ -777,9 +785,8 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         tex = { 'tex-fmt' },
+        python = { 'black' },
         -- Conform can also run multiple formatters sequentially
-        -- python = { "isort", "black" },
-        --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
       },
@@ -991,6 +998,23 @@ require('lazy').setup({
   -- require 'kickstart.plugins.autopairs',
   -- require 'kickstart.plugins.neo-tree',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+
+  {
+    'lervag/vimtex',
+    lazy = false, -- we don't want to lazy load VimTeX
+    -- tag = "v2.15", -- uncomment to pin to a specific release
+    init = function()
+      -- VimTeX configuration goes here, e.g.
+      vim.g.vimtex_view_method = 'zathura'
+    end,
+  },
+
+  {
+    'numToStr/Comment.nvim',
+    opts = {
+      -- add any options here
+    },
+  },
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
