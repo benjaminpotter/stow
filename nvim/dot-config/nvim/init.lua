@@ -295,6 +295,7 @@ require('lazy').setup({
     version = '1.*',
     opts = {
       debug = true,
+      open_cmd = 'firefox %s -P typst-preview --class typst-preview',
     }, -- lazy.nvim will implicitly calls `setup {}`
   },
 
